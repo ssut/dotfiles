@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux/.tmux.conf
+    ~/.config/nvim:
+      create: true
+      path: nvim
+    ~/.vimrc: nvim/init.vim
+    ~/.zshrc: zsh/.zshrc
+    ~/.gitconfig: .gitconfig
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - ["git clone https://github.com/creationix/nvm.git ~/.asdf/nvm", Installing nvm]
+  - [nvim +PlugInstall +qall, Installing vim plugins]
+  - [~/.tmux/plugins/bin/install_plugins, Installing tmux plugins]
+  - [source ~/.zshrc]

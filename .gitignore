@@ -1,0 +1,6 @@
+plugged/
+nvm/
+pyenv/
+brew/
+
+.DS_Store
