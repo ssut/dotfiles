@@ -1,6 +1,5 @@
 plugged/
-nvm/
-pyenv/
 brew/
+zsh/zprezto/
 
 .DS_Store
