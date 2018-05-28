@@ -43,7 +43,6 @@ call plug#begin('~/.asdf/nvim/plugged')
 
 " utils
   Plug 'w0rp/ale' " Asynchronous Lint Engine
-  Plug 'kassio/neoterm' " Wrapper of some neovim :terminal functions
   Plug 'sjl/gundo.vim' " visualize your Vim undo tree
   Plug 'janko-m/vim-test' " A Vim wrapper for running tests on different granularities
   Plug 'mklabs/split-term.vim'
