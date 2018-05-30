@@ -85,7 +85,7 @@
   let g:one_allow_italics = 1 " Italic for comments
   try
     " colorscheme hybrid_reverse
-    colo OceanicNext
+    colo one
   catch
   endtry
 
