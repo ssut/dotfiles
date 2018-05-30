@@ -1,4 +1,18 @@
-export ZSH=$HOME/.asdf/zsh/oh-my-zsh
-for config_file ($HOME/.asdf/zsh/*.zsh) source $config_file
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
-source $ZSH/oh-my-zsh.sh
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+if [ -d $HOME/.asdf/zsh/customs ]; then
+  for file in $HOME/.asdf/zsh/customs/*.zsh; do
+    source $file
+  done
+fi
+
