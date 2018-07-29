@@ -3,6 +3,7 @@ function! DoRemote(arg)
 endfunction
 call plug#begin('~/.asdf/nvim/plugged')
 " looking
+  Plug 'RRethy/vim-illuminate' " illuminating the other uses of the current word under the cursor
   Plug 'mhinz/vim-startify' " The fancy start screen for Vim
   Plug 'Yggdroot/indentLine' " A vim plugin to display the indention levels with thin vertical lines
   Plug 'ryanoasis/vim-devicons' " Adds file type glyphs/icons to Vim plugins
