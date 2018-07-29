@@ -9,7 +9,13 @@
       create: true
       path: nvim
     ~/.vimrc: nvim/init.vim
+    ~/.zlogin: zsh/zprezto/runcoms/zlogin
+    ~/.zlogout: zsh/zprezto/runcoms/zlogout
+    ~/.zpreztorc: zsh/zprezto/runcoms/zpreztorc
+    ~/.zprofile: zsh/zprezto/runcoms/zprofile
+    ~/.zshenv: zsh/zprezto/runcoms/zshenv
     ~/.zshrc: zsh/.zshrc
+    ~/.zprezto: zsh/zprezto
     ~/.gitconfig: .gitconfig
 
 - shell:
