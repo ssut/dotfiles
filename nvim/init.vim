@@ -19,7 +19,8 @@ call plug#begin('~/.asdf/nvim/plugged')
   Plug 'NLKNguyen/papercolor-theme' " PaperColor
 
 " completion/templating
-  Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocompletion
+  Plug 'neoclide/coc.nvim', { 'branch': 'release'  }
+  " Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocompletion
   Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair
   Plug 'ervandew/supertab' " Perform all your vim insert mode completions with Tab
   Plug 'tpope/vim-endwise' " wisely add end in ruby, endfunction/endif/more in vim script, etc
